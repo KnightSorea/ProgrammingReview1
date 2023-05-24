@@ -20,9 +20,9 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void updateScore()
+    public void updateScore(float pointsToAdd)
     {
-        PlayerScore += 10f;
+        PlayerScore += pointsToAdd;
         scoreUI.text = $"Score:{PlayerScore}";
     }
 

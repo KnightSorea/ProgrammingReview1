@@ -16,6 +16,6 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         transform.right = Player.position - transform.position;
-        transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
+        transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
     }
 }
